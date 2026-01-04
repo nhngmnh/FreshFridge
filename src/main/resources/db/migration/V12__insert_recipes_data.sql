@@ -2,7 +2,7 @@
 -- Migration to add 50 Vietnamese recipes with ingredients
 
 -- Insert 50 recipes with explicit IDs
-INSERT INTO recipes (id, name, description, html_content, is_system, created_by, created_at) VALUES
+INSERT INTO recipes (id, name, description, html_content, is_system, created_at) VALUES
 -- Món canh (Soups)
 (1, 'Canh chua cá', 'Canh chua cá thơm ngon đậm đà', '<p>Làm sạch cá, ướpgia vị. Nấu nước dùng với cà chua, dứa. Cho cá vào nấu chín.</p>', TRUE, 1, CURRENT_TIMESTAMP),
 (2, 'Canh bí đao', 'Canh bí đao thanh mát bổ dưỡng', '<p>Gọt vỏ bí đao, cắt miếng. Nấu nước sôi, cho bí vào. Nêm nếm gia vị.</p>', TRUE, 1, CURRENT_TIMESTAMP),

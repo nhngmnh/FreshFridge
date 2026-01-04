@@ -1,0 +1,87 @@
+-- V4: Create foods table
+-- Migration for Food domain
+
+CREATE TABLE foods (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    category_id BIGINT NOT NULL,
+    group_id BIGINT,                        -- NULL = system food, NOT NULL = group food
+    image_url TEXT,
+    created_by BIGINT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
+    CONSTRAINT fk_foods_category FOREIGN KEY (category_id) REFERENCES categories(id),
+    CONSTRAINT fk_foods_group FOREIGN KEY (group_id) REFERENCES groups(id) ON DELETE CASCADE,
+    CONSTRAINT fk_foods_created_by FOREIGN KEY (created_by) REFERENCES users(id) ON DELETE SET NULL,
+    CONSTRAINT uk_foods_name_group UNIQUE (name, group_id)
+);
+
+-- Indexes for performance
+CREATE INDEX idx_foods_group_id ON foods(group_id);
+CREATE INDEX idx_foods_category_id ON foods(category_id);
+CREATE INDEX idx_foods_name ON foods(name);
+
+-- Seed data for system foods (groupId = NULL)
+INSERT INTO foods (name, category_id, group_id, created_at, updated_at) VALUES
+-- Rau củ (category_id = 1)
+('Cà chua', 1, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Cà rốt', 1, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Khoai tây', 1, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Hành tây', 1, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Tỏi', 1, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Bắp cải', 1, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Rau muống', 1, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Rau cải', 1, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Dưa chuột', 1, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Bí đao', 1, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+
+-- Thịt (category_id = 2)
+('Thịt heo', 2, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Thịt bò', 2, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Thịt gà', 2, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Thịt vịt', 2, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Xương heo', 2, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+
+-- Hải sản (category_id = 3)
+('Cá thu', 3, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Cá hồi', 3, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Tôm', 3, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Mực', 3, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Cua', 3, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+
+-- Trứng & Sữa (category_id = 4)
+('Trứng gà', 4, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Trứng vịt', 4, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Sữa tươi', 4, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Phô mai', 4, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Bơ', 4, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+
+-- Gia vị (category_id = 5)
+('Muối', 5, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Đường', 5, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Nước mắm', 5, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Dầu ăn', 5, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Hạt nêm', 5, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+
+-- Đồ khô (category_id = 6)
+('Gạo', 6, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Mì gói', 6, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Bún khô', 6, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Miến', 6, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+
+-- Đồ uống (category_id = 7)
+('Nước ngọt', 7, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Nước cam', 7, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Trà xanh', 7, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Cà phê', 7, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+
+-- Đông lạnh (category_id = 8)
+('Kem', 8, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Xúc xích', 8, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Há cảo', 8, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+-- Comments
+COMMENT ON TABLE foods IS 'Danh sách thực phẩm';
+COMMENT ON COLUMN foods.group_id IS 'NULL = thực phẩm hệ thống, NOT NULL = thực phẩm của nhóm';
+COMMENT ON COLUMN foods.category_id IS 'Danh mục thực phẩm';

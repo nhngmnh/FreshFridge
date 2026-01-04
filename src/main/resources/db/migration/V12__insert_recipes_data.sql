@@ -4,77 +4,77 @@
 -- Insert 50 recipes with explicit IDs
 INSERT INTO recipes (id, name, description, html_content, is_system, created_at) VALUES
 -- Món canh (Soups)
-(1, 'Canh chua cá', 'Canh chua cá thơm ngon đậm đà', '<p>Làm sạch cá, ướpgia vị. Nấu nước dùng với cà chua, dứa. Cho cá vào nấu chín.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(2, 'Canh bí đao', 'Canh bí đao thanh mát bổ dưỡng', '<p>Gọt vỏ bí đao, cắt miếng. Nấu nước sôi, cho bí vào. Nêm nếm gia vị.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(3, 'Canh cải thịt băm', 'Canh rau cải thịt băm nhanh gọn', '<p>Xào thịt băm thơm. Cho nước vào nấu sôi. Thêm rau cải và gia vị.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(4, 'Canh chua tôm', 'Canh chua tôm chua cay ngon miệng', '<p>Làm sạch tôm. Nấu nước dùng với cà chua. Cho tôm và rau vào nấu.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(5, 'Canh mực chua', 'Canh mực chua thanh ngon', '<p>Làm sạch mực, cắt khoanh. Nấu nước dùng chua. Cho mực vào nấu nhanh.</p>', TRUE, 1, CURRENT_TIMESTAMP),
+(1, 'Canh chua cá', 'Canh chua cá thơm ngon đậm đà', '<p>Làm sạch cá, ướpgia vị. Nấu nước dùng với cà chua, dứa. Cho cá vào nấu chín.</p>', TRUE, CURRENT_TIMESTAMP),
+(2, 'Canh bí đao', 'Canh bí đao thanh mát bổ dưỡng', '<p>Gọt vỏ bí đao, cắt miếng. Nấu nước sôi, cho bí vào. Nêm nếm gia vị.</p>', TRUE, CURRENT_TIMESTAMP),
+(3, 'Canh cải thịt băm', 'Canh rau cải thịt băm nhanh gọn', '<p>Xào thịt băm thơm. Cho nước vào nấu sôi. Thêm rau cải và gia vị.</p>', TRUE, CURRENT_TIMESTAMP),
+(4, 'Canh chua tôm', 'Canh chua tôm chua cay ngon miệng', '<p>Làm sạch tôm. Nấu nước dùng với cà chua. Cho tôm và rau vào nấu.</p>', TRUE, CURRENT_TIMESTAMP),
+(5, 'Canh mực chua', 'Canh mực chua thanh ngon', '<p>Làm sạch mực, cắt khoanh. Nấu nước dùng chua. Cho mực vào nấu nhanh.</p>', TRUE, CURRENT_TIMESTAMP),
 
 -- Món xào (Stir-fried)
-(6, 'Thịt heo xào cà chua', 'Thịt heo xào cà chua đưa cơm', '<p>Ướp thịt với gia vị. Xào thơm tỏi, cho thịt vào xào. Thêm cà chua xào chín.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(7, 'Thịt bò xào rau muống', 'Thịt bò xào rau muống giòn ngọt', '<p>Ướp thịt bò mềm. Xào thơm tỏi, cho thịt bò xào nhanh. Thêm rau muống xào vừa.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(8, 'Gà xào gừng', 'Gà xào gừng thơm nồng', '<p>Thái thịt gà miếng vừa. Xào gừng thơm. Cho gà vào xào chín với gia vị.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(9, 'Mực xào chua ngọt', 'Mực xào chua ngọt hấp dẫn', '<p>Làm sạch mực, cắt miếng. Xào thơm hành. Cho mực và sốt chua ngọt xào nhanh.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(10, 'Tôm xào bông cải', 'Tôm xào bông cải dinh dưỡng', '<p>Làm sạch tôm. Luộc bông cải. Xào tôm với bông cải và gia vị.</p>', TRUE, 1, CURRENT_TIMESTAMP),
+(6, 'Thịt heo xào cà chua', 'Thịt heo xào cà chua đưa cơm', '<p>Ướp thịt với gia vị. Xào thơm tỏi, cho thịt vào xào. Thêm cà chua xào chín.</p>', TRUE, CURRENT_TIMESTAMP),
+(7, 'Thịt bò xào rau muống', 'Thịt bò xào rau muống giòn ngọt', '<p>Ướp thịt bò mềm. Xào thơm tỏi, cho thịt bò xào nhanh. Thêm rau muống xào vừa.</p>', TRUE, CURRENT_TIMESTAMP),
+(8, 'Gà xào gừng', 'Gà xào gừng thơm nồng', '<p>Thái thịt gà miếng vừa. Xào gừng thơm. Cho gà vào xào chín với gia vị.</p>', TRUE, CURRENT_TIMESTAMP),
+(9, 'Mực xào chua ngọt', 'Mực xào chua ngọt hấp dẫn', '<p>Làm sạch mực, cắt miếng. Xào thơm hành. Cho mực và sốt chua ngọt xào nhanh.</p>', TRUE, CURRENT_TIMESTAMP),
+(10, 'Tôm xào bông cải', 'Tôm xào bông cải dinh dưỡng', '<p>Làm sạch tôm. Luộc bông cải. Xào tôm với bông cải và gia vị.</p>', TRUE, CURRENT_TIMESTAMP),
 
 -- Món chiên/rán (Fried)
-(11, 'Trứng chiên', 'Trứng chiên đơn giản nhanh gọn', '<p>Đập trứng vào bát đánh đều. Làm nóng dầu. Chiên trứng vàng 2 mặt.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(12, 'Cá chiên nước mắm', 'Cá chiên nước mắm thơm ngon', '<p>Rửa sạch cá, ướp gia vị. Chiên cá vàng giòn. Chan nước mắm pha.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(13, 'Thịt heo chiên xù', 'Thịt heo chiên xù giòn rụm', '<p>Thái thịt mỏng, ướp gia vị. Tẩm bột chiên xù. Chiên vàng giòn.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(14, 'Gà rán', 'Gà rán giòn tan thơm lừng', '<p>Ướp gà với gia vị. Tẩm bột chiên giòn. Chiên ngập dầu đến vàng.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(15, 'Khoai tây chiên', 'Khoai tây chiên giòn rụm', '<p>Gọt khoai tây, cắt sợi. Ngâm nước lạnh. Chiên 2 lần để giòn.</p>', TRUE, 1, CURRENT_TIMESTAMP),
+(11, 'Trứng chiên', 'Trứng chiên đơn giản nhanh gọn', '<p>Đập trứng vào bát đánh đều. Làm nóng dầu. Chiên trứng vàng 2 mặt.</p>', TRUE, CURRENT_TIMESTAMP),
+(12, 'Cá chiên nước mắm', 'Cá chiên nước mắm thơm ngon', '<p>Rửa sạch cá, ướp gia vị. Chiên cá vàng giòn. Chan nước mắm pha.</p>', TRUE, CURRENT_TIMESTAMP),
+(13, 'Thịt heo chiên xù', 'Thịt heo chiên xù giòn rụm', '<p>Thái thịt mỏng, ướp gia vị. Tẩm bột chiên xù. Chiên vàng giòn.</p>', TRUE, CURRENT_TIMESTAMP),
+(14, 'Gà rán', 'Gà rán giòn tan thơm lừng', '<p>Ướp gà với gia vị. Tẩm bột chiên giòn. Chiên ngập dầu đến vàng.</p>', TRUE, CURRENT_TIMESTAMP),
+(15, 'Khoai tây chiên', 'Khoai tây chiên giòn rụm', '<p>Gọt khoai tây, cắt sợi. Ngâm nước lạnh. Chiên 2 lần để giòn.</p>', TRUE, CURRENT_TIMESTAMP),
 
 -- Món luộc/hấp (Boiled/Steamed)
-(16, 'Thịt heo luộc', 'Thịt heo luộc mềm ngọt', '<p>Rửa sạch thịt. Luộc với hành tỏi. Vớt ra để nguội, thái lát.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(17, 'Gà luộc', 'Gà luộc nguyên con thơm ngon', '<p>Rửa sạch gà. Luộc trong nước sôi với gừng. Luộc chín vớt ra.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(18, 'Trứng luộc', 'Trứng luộc dinh dưỡng', '<p>Cho trứng vào nồi nước lạnh. Đun sôi 8-10 phút. Ngâm nước lạnh.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(19, 'Tôm luộc', 'Tôm luộc tươi ngọt', '<p>Rửa sạch tôm. Luộc nhanh trong nước sôi. Vớt ra ngâm nước đá.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(20, 'Bắp cải luộc', 'Bắp cải luộc giòn ngọt', '<p>Rửa sạch bắp cải, cắt múi. Luộc trong nước sôi. Vớt ra để ráo.</p>', TRUE, 1, CURRENT_TIMESTAMP),
+(16, 'Thịt heo luộc', 'Thịt heo luộc mềm ngọt', '<p>Rửa sạch thịt. Luộc với hành tỏi. Vớt ra để nguội, thái lát.</p>', TRUE, CURRENT_TIMESTAMP),
+(17, 'Gà luộc', 'Gà luộc nguyên con thơm ngon', '<p>Rửa sạch gà. Luộc trong nước sôi với gừng. Luộc chín vớt ra.</p>', TRUE, CURRENT_TIMESTAMP),
+(18, 'Trứng luộc', 'Trứng luộc dinh dưỡng', '<p>Cho trứng vào nồi nước lạnh. Đun sôi 8-10 phút. Ngâm nước lạnh.</p>', TRUE, CURRENT_TIMESTAMP),
+(19, 'Tôm luộc', 'Tôm luộc tươi ngọt', '<p>Rửa sạch tôm. Luộc nhanh trong nước sôi. Vớt ra ngâm nước đá.</p>', TRUE, CURRENT_TIMESTAMP),
+(20, 'Bắp cải luộc', 'Bắp cải luộc giòn ngọt', '<p>Rửa sạch bắp cải, cắt múi. Luộc trong nước sôi. Vớt ra để ráo.</p>', TRUE, CURRENT_TIMESTAMP),
 
 -- Món kho (Braised)
-(21, 'Thịt kho tàu', 'Thịt kho tàu đậm đà', '<p>Luộc sơ thịt. Kho với nước dừa, nước mắm. Kho đến thịt mềm thấm gia vị.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(22, 'Cá kho tộ', 'Cá kho tộ thơm ngon đưa cơm', '<p>Rửa sạch cá, ướp gia vị. Kho với nước mắm đường. Kho đến cá chín săn.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(23, 'Thịt kho trứng', 'Thịt kho trứng đậm vị', '<p>Luộc chín trứng. Kho thịt với nước dừa. Cho trứng vào kho cùng.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(24, 'Gà kho gừng', 'Gà kho gừng ấm bụng', '<p>Chặt gà miếng vừa. Kho với gừng, nước mắm. Kho đến gà mềm thấm vị.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(25, 'Cá kho riềng', 'Cá kho riềng thơm nồng', '<p>Làm sạch cá, ướp gia vị. Kho với riềng băm. Kho đến cá chín săn.</p>', TRUE, 1, CURRENT_TIMESTAMP),
+(21, 'Thịt kho tàu', 'Thịt kho tàu đậm đà', '<p>Luộc sơ thịt. Kho với nước dừa, nước mắm. Kho đến thịt mềm thấm gia vị.</p>', TRUE, CURRENT_TIMESTAMP),
+(22, 'Cá kho tộ', 'Cá kho tộ thơm ngon đưa cơm', '<p>Rửa sạch cá, ướp gia vị. Kho với nước mắm đường. Kho đến cá chín săn.</p>', TRUE, CURRENT_TIMESTAMP),
+(23, 'Thịt kho trứng', 'Thịt kho trứng đậm vị', '<p>Luộc chín trứng. Kho thịt với nước dừa. Cho trứng vào kho cùng.</p>', TRUE, CURRENT_TIMESTAMP),
+(24, 'Gà kho gừng', 'Gà kho gừng ấm bụng', '<p>Chặt gà miếng vừa. Kho với gừng, nước mắm. Kho đến gà mềm thấm vị.</p>', TRUE, CURRENT_TIMESTAMP),
+(25, 'Cá kho riềng', 'Cá kho riềng thơm nồng', '<p>Làm sạch cá, ướp gia vị. Kho với riềng băm. Kho đến cá chín săn.</p>', TRUE, CURRENT_TIMESTAMP),
 
 -- Món nướng (Grilled)
-(26, 'Thịt heo nướng', 'Thịt heo nướng thơm lừng', '<p>Ướp thịt với gia vị qua đêm. Nướng trên than hồng. Nướng chín 2 mặt.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(27, 'Gà nướng muối ớt', 'Gà nướng muối ớt cay thơm', '<p>Ướp gà với muối ớt. Nướng lò hoặc nướng than. Nướng đều đến vàng.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(28, 'Cá nướng', 'Cá nướng thơm phức', '<p>Rửa sạch cá, ướp gia vị. Nướng trên than hồng. Nướng chín giòn.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(29, 'Tôm nướng', 'Tôm nướng tươi ngon', '<p>Làm sạch tôm, ướp gia vị. Nướng trên than hồng. Nướng đỏ đều.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(30, 'Cua nướng', 'Cua nướng thơm béo', '<p>Làm sạch cua. Nướng trên bếp than. Nướng chín đỏ.</p>', TRUE, 1, CURRENT_TIMESTAMP),
+(26, 'Thịt heo nướng', 'Thịt heo nướng thơm lừng', '<p>Ướp thịt với gia vị qua đêm. Nướng trên than hồng. Nướng chín 2 mặt.</p>', TRUE, CURRENT_TIMESTAMP),
+(27, 'Gà nướng muối ớt', 'Gà nướng muối ớt cay thơm', '<p>Ướp gà với muối ớt. Nướng lò hoặc nướng than. Nướng đều đến vàng.</p>', TRUE, CURRENT_TIMESTAMP),
+(28, 'Cá nướng', 'Cá nướng thơm phức', '<p>Rửa sạch cá, ướp gia vị. Nướng trên than hồng. Nướng chín giòn.</p>', TRUE, CURRENT_TIMESTAMP),
+(29, 'Tôm nướng', 'Tôm nướng tươi ngon', '<p>Làm sạch tôm, ướp gia vị. Nướng trên than hồng. Nướng đỏ đều.</p>', TRUE, CURRENT_TIMESTAMP),
+(30, 'Cua nướng', 'Cua nướng thơm béo', '<p>Làm sạch cua. Nướng trên bếp than. Nướng chín đỏ.</p>', TRUE, CURRENT_TIMESTAMP),
 
 -- Món cơm (Rice dishes)
-(31, 'Cơm chiên dương châu', 'Cơm chiên dương châu nhiều topping', '<p>Chuẩn bị cơm nguội. Xào trứng, thịt, tôm. Cho cơm vào xào đều.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(32, 'Cơm chiên thập cẩm', 'Cơm chiên thập cẩm đầy đủ', '<p>Chuẩn bị cơm nguội và topping. Xào thơm topping. Trộn cơm xào đều.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(33, 'Cơm gà xối mỡ', 'Cơm gà xối mỡ hấp dẫn', '<p>Nấu cơm với nước luộc gà. Xé gà luộc. Xối mỡ hành lên cơm.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(34, 'Cơm gà Hải Nam', 'Cơm gà Hải Nam thơm béo', '<p>Nấu cơm với nước luộc gà. Luộc gà thơm mềm. Chấm mắm gừng.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(35, 'Cơm trắng', 'Cơm trắng đơn giản', '<p>Vo gạo sạch. Cho vào nồi cơm điện. Nấu chín và xới cơm.</p>', TRUE, 1, CURRENT_TIMESTAMP),
+(31, 'Cơm chiên dương châu', 'Cơm chiên dương châu nhiều topping', '<p>Chuẩn bị cơm nguội. Xào trứng, thịt, tôm. Cho cơm vào xào đều.</p>', TRUE, CURRENT_TIMESTAMP),
+(32, 'Cơm chiên thập cẩm', 'Cơm chiên thập cẩm đầy đủ', '<p>Chuẩn bị cơm nguội và topping. Xào thơm topping. Trộn cơm xào đều.</p>', TRUE, CURRENT_TIMESTAMP),
+(33, 'Cơm gà xối mỡ', 'Cơm gà xối mỡ hấp dẫn', '<p>Nấu cơm với nước luộc gà. Xé gà luộc. Xối mỡ hành lên cơm.</p>', TRUE, CURRENT_TIMESTAMP),
+(34, 'Cơm gà Hải Nam', 'Cơm gà Hải Nam thơm béo', '<p>Nấu cơm với nước luộc gà. Luộc gà thơm mềm. Chấm mắm gừng.</p>', TRUE, CURRENT_TIMESTAMP),
+(35, 'Cơm trắng', 'Cơm trắng đơn giản', '<p>Vo gạo sạch. Cho vào nồi cơm điện. Nấu chín và xới cơm.</p>', TRUE, CURRENT_TIMESTAMP),
 
 -- Món bún/phở (Noodle soups)
-(36, 'Phở bò', 'Phở bò truyền thống Hà Nội', '<p>Ninh xương bò lâu giờ. Luộc bánh phở. Chan nước dùng, cho thịt bò.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(37, 'Phở gà', 'Phở gà thanh đạm ngọt vị', '<p>Hầm xương gà lâu. Luộc bánh phở. Chan nước dùng, cho thịt gà.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(38, 'Bún bò', 'Bún bò Huế cay nồng', '<p>Ninh xương heo, bò. Luộc bún tươi. Chan nước dùng cay thơm.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(39, 'Bún riêu cua', 'Bún riêu cua cà chua đậm đà', '<p>Nấu nước dùng với cà chua. Làm riêu cua. Chan lên bún tươi.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(40, 'Bún chả', 'Bún chả Hà Nội nổi tiếng', '<p>Nướng chả heo thơm. Pha nước mắm chua ngọt. Ăn kèm bún tươi.</p>', TRUE, 1, CURRENT_TIMESTAMP),
+(36, 'Phở bò', 'Phở bò truyền thống Hà Nội', '<p>Ninh xương bò lâu giờ. Luộc bánh phở. Chan nước dùng, cho thịt bò.</p>', TRUE, CURRENT_TIMESTAMP),
+(37, 'Phở gà', 'Phở gà thanh đạm ngọt vị', '<p>Hầm xương gà lâu. Luộc bánh phở. Chan nước dùng, cho thịt gà.</p>', TRUE, CURRENT_TIMESTAMP),
+(38, 'Bún bò', 'Bún bò Huế cay nồng', '<p>Ninh xương heo, bò. Luộc bún tươi. Chan nước dùng cay thơm.</p>', TRUE, CURRENT_TIMESTAMP),
+(39, 'Bún riêu cua', 'Bún riêu cua cà chua đậm đà', '<p>Nấu nước dùng với cà chua. Làm riêu cua. Chan lên bún tươi.</p>', TRUE, CURRENT_TIMESTAMP),
+(40, 'Bún chả', 'Bún chả Hà Nội nổi tiếng', '<p>Nướng chả heo thơm. Pha nước mắm chua ngọt. Ăn kèm bún tươi.</p>', TRUE, CURRENT_TIMESTAMP),
 
 -- Món mì/miến (Noodles)
-(41, 'Mì xào giòn', 'Mì xào giòn giòn tan', '<p>Chiên mì vàng giòn. Xào topping. Xếp mì, chan topping lên.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(42, 'Mì xào mềm', 'Mì xào mềm hấp dẫn', '<p>Luộc mì mềm. Xào thơm topping. Cho mì vào xào đều.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(43, 'Miến xào cua', 'Miến xào cua thơm béo', '<p>Ngâm miến mềm. Xào thơm thịt cua. Cho miến vào xào đều.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(44, 'Miến gà', 'Miến gà nấm thơm ngon', '<p>Hầm nước dùng gà. Ngâm miến mềm. Chan nước dùng lên miến.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(45, 'Mì trộn', 'Mì trộn nhanh gọn', '<p>Luộc mì chín. Vớt ra để ráo. Trộn với nước tương và topping.</p>', TRUE, 1, CURRENT_TIMESTAMP),
+(41, 'Mì xào giòn', 'Mì xào giòn giòn tan', '<p>Chiên mì vàng giòn. Xào topping. Xếp mì, chan topping lên.</p>', TRUE, CURRENT_TIMESTAMP),
+(42, 'Mì xào mềm', 'Mì xào mềm hấp dẫn', '<p>Luộc mì mềm. Xào thơm topping. Cho mì vào xào đều.</p>', TRUE, CURRENT_TIMESTAMP),
+(43, 'Miến xào cua', 'Miến xào cua thơm béo', '<p>Ngâm miến mềm. Xào thơm thịt cua. Cho miến vào xào đều.</p>', TRUE, CURRENT_TIMESTAMP),
+(44, 'Miến gà', 'Miến gà nấm thơm ngon', '<p>Hầm nước dùng gà. Ngâm miến mềm. Chan nước dùng lên miến.</p>', TRUE, CURRENT_TIMESTAMP),
+(45, 'Mì trộn', 'Mì trộn nhanh gọn', '<p>Luộc mì chín. Vớt ra để ráo. Trộn với nước tương và topping.</p>', TRUE, CURRENT_TIMESTAMP),
 
 -- Món salad/gỏi (Salads)
-(46, 'Gỏi gà', 'Gỏi gà trộn rau thơm', '<p>Xé gà luộc. Trộn với rau thơm, hành tây. Chan nước mắm chua ngọt.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(47, 'Gỏi cuốn tôm thịt', 'Gỏi cuốn tôm thịt thanh mát', '<p>Luộc tôm thịt. Cuốn bánh tráng với rau. Chấm tương đậu phộng.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(48, 'Salad rau trộn', 'Salad rau trộn tươi mát', '<p>Rửa sạch rau củ. Cắt nhỏ vừa ăn. Trộn đều với sốt salad.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(49, 'Gỏi ngó sen tôm', 'Gỏi ngó sen tôm giòn ngọt', '<p>Luộc tôm và ngó sen. Trộn với rau thơm. Chan nước mắm chua ngọt.</p>', TRUE, 1, CURRENT_TIMESTAMP),
+(46, 'Gỏi gà', 'Gỏi gà trộn rau thơm', '<p>Xé gà luộc. Trộn với rau thơm, hành tây. Chan nước mắm chua ngọt.</p>', TRUE, CURRENT_TIMESTAMP),
+(47, 'Gỏi cuốn tôm thịt', 'Gỏi cuốn tôm thịt thanh mát', '<p>Luộc tôm thịt. Cuốn bánh tráng với rau. Chấm tương đậu phộng.</p>', TRUE, CURRENT_TIMESTAMP),
+(48, 'Salad rau trộn', 'Salad rau trộn tươi mát', '<p>Rửa sạch rau củ. Cắt nhỏ vừa ăn. Trộn đều với sốt salad.</p>', TRUE, CURRENT_TIMESTAMP),
+(49, 'Gỏi ngó sen tôm', 'Gỏi ngó sen tôm giòn ngọt', '<p>Luộc tôm và ngó sen. Trộn với rau thơm. Chan nước mắm chua ngọt.</p>', TRUE, CURRENT_TIMESTAMP),
 
 -- Món đồ uống (Beverages)
-(50, 'Trà sữa', 'Trà sữa thơm ngon', '<p>Pha trà đen đậm. Thêm sữa tươi và đường. Thêm đá uống mát.</p>', TRUE, 1, CURRENT_TIMESTAMP),
-(51, 'Cà phê sữa đá', 'Cà phê sữa đá truyền thống', '<p>Pha cà phê đậm. Thêm sữa đặc. Cho đá uống mát.</p>', TRUE, 1, CURRENT_TIMESTAMP);
+(50, 'Trà sữa', 'Trà sữa thơm ngon', '<p>Pha trà đen đậm. Thêm sữa tươi và đường. Thêm đá uống mát.</p>', TRUE, CURRENT_TIMESTAMP),
+(51, 'Cà phê sữa đá', 'Cà phê sữa đá truyền thống', '<p>Pha cà phê đậm. Thêm sữa đặc. Cho đá uống mát.</p>', TRUE, CURRENT_TIMESTAMP);
 
 -- Reset sequence to continue from the last inserted ID
 SELECT setval('recipes_id_seq', 51, true);
